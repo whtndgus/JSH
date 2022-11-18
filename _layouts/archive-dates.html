@@ -6,11 +6,11 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
-{%- assign taxonomies = site.posts | group_by_exp: "post", "post.date | date: '%Y'" -%}
+{%- assign taxonomies = site.posts | group_by_exp: "post", "post.date | date: '%Y'" -%} <!--블로그 포스트 정보 를 배열?로 선언-->
 
-<div class="taxonomies-wrapper">
+<div class="taxonomies-wrapper"> <!--Date 년도-->
   <ul class="taxonomies">
-    {%- for taxonomy in taxonomies -%}
+    {%- for taxonomy in taxonomies -%} <!--년도 li 태그 생성 반복문-->
       <li>
         {%- capture link -%}{{ page.permalink }}#{{ taxonomy.name }}{%- endcapture -%}
         <a class="taxonomy" href="{{ link | relative_url }}">
