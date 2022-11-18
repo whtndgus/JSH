@@ -3,7 +3,7 @@ title: Not Pure Poole
 description: A simple, beautiful, and powerful Jekyll theme for blogs
 url: https://whtndgus.github.io/whtnd.github.io/
 avatar: /avatar.jpeg
-paginate: 5
+paginate: 100
 permalink: pretty
 cover_image: /bg.jpeg
 
